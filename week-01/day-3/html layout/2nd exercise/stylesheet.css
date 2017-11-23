@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 385px;
+    max-height: 549px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 20px solid rgb(66, 133, 244);
+}
+
+.dir{
+    width: 349px;
+    height: 128px;
+    font-size: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.dir.north {
+    background: rgb(230, 118, 118);
+}
+.dir.east {
+    background: rgb(242, 240, 98);
+}
+.dir.south {
+    background: rgb(169, 230, 230);
+}
+.dir.west {
+    background: rgb(118, 146, 228);
+}
