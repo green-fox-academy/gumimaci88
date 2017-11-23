@@ -33,28 +33,25 @@ h2 {
     font-size: 30px;
     color: #ff0099;
 }
-h2, h3, h4 {
+h2, h3, p {
     font-weight: normal;
 }
-h3, h4 {
+p {
     font-size: 18px;
     font-family: 'Inconsolata';
 }
-h5 {
+h3 {
     text-align: center;
 }
-h6 {
+h4 {
     text-align: center;
     font-size: 35px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
-h7 {
+h5 {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 5px;
-}
-p {
-    font-family: 'Inconsolata';
 }
