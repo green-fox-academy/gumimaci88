@@ -1,0 +1,46 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    height: 785px;
+    width: 625px;
+    background: rgb(18, 119, 49);
+}
+
+div {
+    background: rgb(255, 228, 46);
+    margin: 14px 0px 14px 0px;
+    border: 14px solid red;
+    width: 100%;
+}
+
+.top {
+    height: 44px;
+}
+
+.middle {
+    height: 437px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middle.left {
+    float: left;
+}
+
+.middle.right {
+    float: right;
+}
+
+.bottom {
+    height: 184px;
+    display: flex;
+}

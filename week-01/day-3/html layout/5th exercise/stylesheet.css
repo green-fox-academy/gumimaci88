@@ -1,0 +1,37 @@
+* {
+    margin: 2px;
+}
+
+body {
+    max-height: 380px;
+    max-width: 340px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: rgb(255, 123, 92);
+    font-size: 28px;
+}
+
+h2 {
+    color: rgb(145, 43, 226);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+    color: rgb(255, 128, 255);
+    text-decoration: underline;
+}
+
+.different {
+    color: black;
+    text-decoration-color: black;
+}
