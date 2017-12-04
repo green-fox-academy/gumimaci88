@@ -22,7 +22,7 @@ public class CountLines {
             numberLines = lines.size();
             System.out.println(numberLines);
         } catch (Exception e) {
-            System.out.println("File not found.");
+            System.out.println();
         }
         return numberLines;
     }
