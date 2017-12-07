@@ -7,11 +7,11 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 public class Drawing {
 
   public static void mainDraw(Graphics graphics) {
-  drawFinal(graphics, 300, 300, WIDTH);
+  drawFinal(graphics, WIDTH/2, WIDTH/2, WIDTH);
   }
 
   private static void drawFinal (Graphics gr, int inputX, int inputY, int size) {
-    if (size < (WIDTH/273)) {
+    if (size < (WIDTH/81)) {
       return;
     } else {
       drawLines(gr, inputX, inputY, size);
