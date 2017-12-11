@@ -6,7 +6,7 @@ public class Student {
   }
 
   public String learn() {
-    return knowledge = "Of course I know, stick to the obvious.";
+    return knowledge = "Of course I can, stick to the obvious.";
   }
 
   public String question(Teacher professor) {
