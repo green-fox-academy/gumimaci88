@@ -1,6 +1,6 @@
 import main.java.Reservations.Reservation;
 
-public class Main {
+public class ReservationApp {
   public static void main(String[] args) {
     int reservationAmount = 10;
 
