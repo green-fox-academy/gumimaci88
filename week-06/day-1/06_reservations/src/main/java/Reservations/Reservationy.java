@@ -1,6 +1,6 @@
 package main.java.Reservations;
 
-public interface Reservations {
+public interface Reservationy {
   String getDowBooking();
 
   String getCodeBooking();

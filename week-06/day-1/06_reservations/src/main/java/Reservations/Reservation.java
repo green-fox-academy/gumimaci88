@@ -2,7 +2,7 @@ package main.java.Reservations;
 
 import java.util.Random;
 
-public class Reservation implements Reservations {
+public class Reservation implements Reservationy {
   private static final String allCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   private static final String[] DOW = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
 
