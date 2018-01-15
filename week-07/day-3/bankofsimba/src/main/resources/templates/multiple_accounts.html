@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="utf-8" />
+</head>
+<style>
+    * {
+        font-family: Calibri;
+        font-size: x-large;
+    }
+    table {
+        border: 5px solid black;
+    }
+    thead {
+        background-color: DarkBlue;
+        color: aliceblue;
+    }
+    tbody {
+        background-color: gold;
+        color: DarkBlue;
+    }
+    td:hover{
+        background-color: white;
+    }
+</style>
+<body>
+<table>
+<thead>
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Currency</th>
+        <th>Family</th>
+        <th>King</th>
+        <th>Alignment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="account : ${accountlist}">
+        <td th:text="${accountStat.index}"/>
+        <td th:text="${account.name}"/>
+        <td th:text="${account.balance}"/>
+        <td th:text="${account.currency}"/>
+        <td th:text="${account.animalType}"/>
+        <td th:if="${account.king}" th:text="King" style="background-color: white; color: red"/>
+        <td th:unless="${account.king}" th:text="'Not a king'"/>
+        <td th:text="${account.alignment}"/>
+        <td>
+            <form class="button" th:action="@{/accounts/raisebalance}" method="post">
+                <input type="submit" value="Raise"/>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
