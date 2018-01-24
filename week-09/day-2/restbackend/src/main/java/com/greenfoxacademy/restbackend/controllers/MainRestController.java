@@ -1,11 +1,11 @@
 package com.greenfoxacademy.restbackend.controllers;
 
 import com.greenfoxacademy.restbackend.models.*;
+import com.greenfoxacademy.restbackend.models.DoUntil.DoUntil;
+import com.greenfoxacademy.restbackend.models.DoUntil.DoUntilFactor;
+import com.greenfoxacademy.restbackend.models.DoUntil.DoUntilSum;
 import com.greenfoxacademy.restbackend.models.Error;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MainRestController {
@@ -35,6 +35,23 @@ public class MainRestController {
       return new AppendA(appendable);
     } else {
       return null;
+    }
+  }
+
+  @PostMapping("/dountil/{what}")
+  public Response doUntil(@PathVariable(value = "what", required = false) String what, @RequestBody(required = false) DoUntil doUntil) {
+    Integer input = doUntil.getUntil();
+    if (doUntil == null) {
+      return new Error("Please provide a number!");
+    } else {
+      switch (what) {
+        case "sum":
+          return new DoUntilSum(input);
+        case "factor":
+          return new DoUntilFactor(input);
+        default:
+          return new Error("Please provide a number!");
+      }
     }
   }
 }
